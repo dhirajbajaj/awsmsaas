@@ -16,14 +16,9 @@ export const BLOG_CATEGORIES: {
 ];
 
 export const BLOG_AUTHORS = {
-  mickasmt: {
-    name: "mickasmt",
+  dbkooper: {
+    name: "dbkooper",
     image: "/_static/avatars/mickasmt.png",
-    twitter: "miickasmt",
-  },
-  shadcn: {
-    name: "shadcn",
-    image: "/_static/avatars/shadcn.jpeg",
-    twitter: "shadcn",
-  },
+    twitter: "dbkooper",
+  }
 };

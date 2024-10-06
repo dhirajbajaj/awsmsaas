@@ -40,10 +40,18 @@ Or, deploy with Vercel:
 
 ### Steps
 
+Editor Preference: We prefer VSCODE editor, but you are free to use whatever you like. 
+
 1. Install dependencies using pnpm:
+
 
 ```sh
 pnpm install
+```
+
+If pnpm isnt installed, use
+```sh
+npm install -g pnpm
 ```
 
 2. Copy `.env.example` to `.env.local` and update the variables.
@@ -52,19 +60,51 @@ pnpm install
 cp .env.example .env.local
 ```
 
+Open .env.local in your code editor, to  
+
+2.1  Generating Auth.js secret 
+
+Guide: [https://authjs.dev/getting-started/installation?framework=Next.js](https://authjs.dev/getting-started/installation?framework=Next.js)
+
+Run the following command, it will automatically generate Auth secret in .env.local
+
+```sh
+npx auth secret
+```
+
+Oauth Guide: [https://authjs.dev/getting-started/authentication/oauth](https://authjs.dev/getting-started/authentication/oauth)
+
+
+2.2 Configure Google Oauth ID & Secret
+
+a. Register OAuth App in Google's dashboard to get client id & secret
+Guide: [https://support.google.com/cloud/answer/6158849?hl=en](https://support.google.com/cloud/answer/6158849?hl=en)
+
+```sh
+callback url: [origin]/api/auth/callback/google
+```
+
+2.3 Configure Github Oauth ID & Secret
+
+Register OAuth App from Github developer settings to get oauth client id & secret
+Guide: [https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app)
+
+```sh
+callback url: [origin]/api/auth/callback/github
+```
+
+
+
+
+
+
 3. Start the development server:
 
 ```sh
 pnpm run dev
 ```
 
-> [!NOTE]  
-> I use [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) package for update this project.
->
-> Use this command for update your project: `ncu -i --format group`
-
 ## Roadmap
-- [ ] Upgrade eslint to v9
 - [ ] Add resend for success subscriptions
 
 
