@@ -3,6 +3,7 @@ import { env } from "@/env.mjs";
 
 const site_url = env.NEXT_PUBLIC_APP_URL;
 
+// change this configuration as per your site
 export const siteConfig: SiteConfig = {
   name: "awsmsaas",
   description:
@@ -10,11 +11,11 @@ export const siteConfig: SiteConfig = {
   url: site_url,
   ogImage: `${site_url}/_static/og.jpg`,
   links: {
-    twitter: "https://codecanyon.net/user/dbkooper",
-    codecanyon: "https://codecanyon.net/user/dbkooper",
-    github: "https://github.com/dhirajbajaj/next-saas-stripe",
+    twitter: "https://twitter.com/profile",
+    url: "https://codecanyon.net/user/dbkooper",
+    github: "https://github.com/gitname/awsmsaas",
   },
-  mailSupport: "support@saas-starter.com",
+  mailSupport: "support@your-email.com",
 };
 
 export const footerLinks: SidebarNavItem[] = [

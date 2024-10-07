@@ -7,20 +7,13 @@ description: How to install the project.
 
 ### Create project
 
-Start by creating a new Next.js project using `create-next-app`:
+Start by unzipping awsmsaas code in your local;
 
-```bash
-npx create-next-app my-saas-project --example "https://github.com/dhirajbajaj/next-saas-stripe-starter"
-```
-
-Or deploy with Vercel :
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdhirajbajaj%2Fnext-saas-stripe-starter)
+Configure/Setup your project to run on localhost & then deploy to vercel as it will require configurations 
 
 <Callout type="warning" twClass="mt-4">
-  A good way to create your repository, but the deployment will fail because you
-  need to add your environment variables locally in your project. Follow the
-  documentation for that.
+  Once configured completely, You can deploy to Vercel from your github repo directly :
+  [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fusername%2Fawsmsaas)
 </Callout>
 
 ### Install dependencies
@@ -28,13 +21,23 @@ Or deploy with Vercel :
 Enter in the folder and install dependencies for your project:
 
 ```bash
-cd my-saas-project
+cd awsmsaas
 pnpm install
+```
+
+Install pnpm if not installed; its faster node package manager than npm and uses less memory
+```bash
+npm install -g pnpm
 ```
 
 ### Create a `.env` file
 
 Copy/paste the `.env.example` in the `.env` file:
+
+```bash
+cp .env.example .env
+```
+
 
 ```md title=".env"
 NEXT_PUBLIC_APP_URL=http://localhost:3000
@@ -42,7 +45,6 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 AUTH_SECRET=
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
-GITHUB_OAUTH_TOKEN=
 
 DATABASE_URL=
 

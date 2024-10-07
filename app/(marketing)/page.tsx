@@ -11,8 +11,8 @@ export default function IndexPage() {
   return (
     <>
       <HeroLanding />
-      <PreviewLanding />
       <Powered />
+      {/* <PreviewLanding /> */}
       <BentoGrid />
       <InfoLanding data={infos[0]} reverse={true} />
       {/* <InfoLanding data={infos[1]} /> */}
