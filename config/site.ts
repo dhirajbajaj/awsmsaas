@@ -4,13 +4,13 @@ import { env } from "@/env.mjs";
 const site_url = env.NEXT_PUBLIC_APP_URL;
 
 export const siteConfig: SiteConfig = {
-  name: "SaaS Starter",
+  name: "AwsmSaaS starter",
   description:
-    "Get your project off to an explosive start with SaaS Starter! Harness the power of Next.js 14, Prisma, Neon, Auth.js v5, Resend, React Email, Shadcn/ui and Stripe to build your next big thing.",
+    "Kickstart your SaaS journey with SaaS Starter! Leverage the power of Next.js 14, Prisma, Neon, and other top-tier tools to rapidly build your next big idea.",
   url: site_url,
   ogImage: `${site_url}/_static/og.jpg`,
   links: {
-    twitter: "https://twitter.com/miickasmt",
+    twitter: "https://twitter.com/dhirajbajaj",
     github: "https://github.com/dhirajbajaj/next-saas-stripe-starter",
   },
   mailSupport: "support@saas-starter.com",

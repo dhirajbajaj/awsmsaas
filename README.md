@@ -4,7 +4,7 @@
 </a>
 
 <p align="center">
-  NEXTJS SaaS Starter !
+  awsmsaas nextjs stripe starter !
 </p>
 
 <p align="center">
