@@ -16,9 +16,9 @@ export const BLOG_CATEGORIES: {
 ];
 
 export const BLOG_AUTHORS = {
-  dbkooper: {
-    name: "dbkooper",
-    image: "/_static/avatars/mickasmt.png",
-    twitter: "dbkooper",
+  dhirajbajaj: {
+    name: "dhirajbajaj",
+    image: "/_static/avatars/dhirajbajaj.png",
+    twitter: "dhirajbajaj",
   },
 };
