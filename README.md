@@ -8,12 +8,6 @@
 </p>
 
 <p align="center">
-  <a href="https://twitter.com/miickasmt">
-    <img src="https://img.shields.io/twitter/follow/miickasmt?style=flat&label=miickasmt&logo=twitter&color=0bf&logoColor=fff" alt="Mickasmt Twitter follower count" />
-  </a>
-</p>
-
-<p align="center">
   <a href="#introduction"><strong>Introduction</strong></a> ·
   <a href="#installation"><strong>Installation</strong></a> ·
   <a href="#tech-stack--features"><strong>Tech Stack + Features</strong></a> ·
@@ -28,15 +22,9 @@ All seamlessly integrated with the SaaS Starter to accelerate your development a
 
 ## Installation
 
-Clone & create this repo locally with the following command:
-
-```bash
-npx create-next-app my-saas-project --example "https://github.com/mickasmt/next-saas-stripe-starter"
-```
-
-Or, deploy with Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmickasmt%2Fnext-saas-stripe-starter)
+Download & unzip the code in your local.
+Push the code to Github repository.  
+You can deploy to vercel using github
 
 ### Steps
 
@@ -54,15 +42,15 @@ If pnpm isnt installed, use
 npm install -g pnpm
 ```
 
-2. Copy `.env.example` to `.env.local` and update the variables.
+2. Copy `.env.example` to `.env` and update the variables.
 
 ```sh
-cp .env.example .env.local
+cp .env.example .env
 ```
 
-Open .env.local in your code editor, to  
+Open .env in your code editor, to update values as follows.
 
-2.1  Generating Auth.js secret 
+2.1  Generating Auth.js secret
 
 Guide: [https://authjs.dev/getting-started/installation?framework=Next.js](https://authjs.dev/getting-started/installation?framework=Next.js)
 
@@ -84,31 +72,40 @@ Guide: [https://support.google.com/cloud/answer/6158849?hl=en](https://support.g
 callback url: [origin]/api/auth/callback/google
 ```
 
-2.3 Configure Github Oauth ID & Secret
+2.3 Configure Postgres Prisma database at Neon.tech
 
-Register OAuth App from Github developer settings to get oauth client id & secret
-Guide: [https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app)
+Register at https://neon.tech/ & create a free postgres prisma database. 
+Make sure to check their pricing as per your requirement. Their free tier is very generous. 
+You can also use other providers as an alternative based on your preference.
+
+Push prisma migrations: 
 
 ```sh
-callback url: [origin]/api/auth/callback/github
+npx prisma db push
 ```
 
 
+2.4 Configure Stripe API keys: 
+
+Use this guide to setup Stripe keys: 
+Guide: [https://next-saas-stripe-starter.vercel.app/docs/configuration/subscriptions](https://next-saas-stripe-starter.vercel.app/docs/configuration/subscriptions)
 
 
-
+a. Signup at Stripe for payment plans. GO to Developer settings > API
+to generate an API key 
+b. Comfigure webhook events 
+c. Configure products & pricing plans, past price-plan ids in .env file 
 
 3. Start the development server:
 
 ```sh
-pnpm run dev
+pnpm run dev 
 ```
 
-## Roadmap
-- [ ] Add resend for success subscriptions
+## Roadmap 
+- [ ] Add resend for success subscriptions 
 
-
-### Frameworks
+### Frameworks 
 
 - [Next.js](https://nextjs.org/) – React framework for building performant apps with the best developer experience
 - [Auth.js](https://authjs.dev/) – Handle user authentication with ease with providers like Google, Twitter, GitHub, etc.
