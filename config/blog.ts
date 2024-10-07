@@ -20,5 +20,5 @@ export const BLOG_AUTHORS = {
     name: "dbkooper",
     image: "/_static/avatars/mickasmt.png",
     twitter: "dbkooper",
-  }
+  },
 };
