@@ -1,4 +1,4 @@
-<a href="https://next-saas-stripe-starter.vercel.app">
+<a href="https://awsmsaas.vercel.app">
   <img alt="SaaS Starter" src="public/_static/og.jpg">
   <h1 align="center">NextJS SaaS Stripe Starter</h1>
 </a>
@@ -88,7 +88,7 @@ npx prisma db push
 2.4 Configure Stripe API keys: 
 
 Use this guide to setup Stripe keys: 
-Guide: [https://next-saas-stripe-starter.vercel.app/docs/configuration/subscriptions](https://next-saas-stripe-starter.vercel.app/docs/configuration/subscriptions)
+Guide: [https://awsmsaas.vercel.app/docs/configuration/subscriptions](https://awsmsaas.vercel.app/docs/configuration/subscriptions)
 
 
 a. Signup at Stripe for payment plans. GO to Developer settings > API
