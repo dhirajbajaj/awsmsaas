@@ -103,7 +103,7 @@ export const testimonials: TestimonialType[] = [
     job: "Full Stack Developer",
     image: "https://randomuser.me/api/portraits/men/1.jpg",
     review:
-      "The awsmsaas repo has truly revolutionized my development workflow. With its comprehensive features and seamless integration with Stripe, I've been able to build and deploy projects faster than ever before. The documentation is clear and concise, making it easy to navigate through the setup process. I highly recommend awsmsaas to any developer.",
+      "The awsmsaas starter kit has truly revolutionized my development workflow. With its comprehensive features and seamless integration with Stripe, I've been able to build and deploy projects faster than ever before. The documentation is clear and concise, making it easy to navigate through the setup process. I highly recommend awsmsaas to any developer.",
   },
   {
     name: "Alice Smith",
