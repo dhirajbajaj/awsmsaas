@@ -1,6 +1,6 @@
 <a href="https://awsmsaas.vercel.app">
   <img alt="SaaS Starter" src="public/_static/og.jpg">
-  <h1 align="center">NextJS SaaS Stripe Starter</h1>
+  <h1 align="center">awsmsaas</h1>
 </a>
 
 <p align="center">
@@ -54,7 +54,7 @@ Open .env in your code editor, to update values as follows.
 
 Guide: [https://authjs.dev/getting-started/installation?framework=Next.js](https://authjs.dev/getting-started/installation?framework=Next.js)
 
-Run the following command, it will automatically generate Auth secret in .env.local
+Run the following command, it will automatically generate Auth secret in .env
 
 ```sh
 npx auth secret
@@ -131,7 +131,6 @@ pnpm run dev
 
 - `useIntersectionObserver` – React hook to observe when an element enters or leaves the viewport
 - `useLocalStorage` – Persist data in the browser's local storage
-- `useScroll` – React hook to observe scroll position ([example](https://github.com/dhirajbajaj/precedent/blob/main/components/layout/navbar.tsx#L12))
 - `nFormatter` – Format numbers with suffixes like `1.2k` or `1.2M`
 - `capitalize` – Capitalize the first letter of a string
 - `truncate` – Truncate a string to a specified length

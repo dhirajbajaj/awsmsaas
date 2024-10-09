@@ -1,10 +1,10 @@
 {
-  "name": "nextjs-saas-starter",
+  "name": "awsmsaas",
   "version": "0.3.1",
   "private": true,
   "author": {
-    "name": "dhirajbajaj",
-    "url": ""
+    "name": "dbkooper",
+    "url": "codecanyon.net/user/dbkooper"
   },
   "scripts": {
     "dev": "next dev",

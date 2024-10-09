@@ -29,15 +29,34 @@ Or this [link](https://generate-secret.vercel.app/32) for generate a random secr
 
 Then add it to your `.env` file:
 
-```js title=".env.local"
+```js title=".env"
 AUTH_SECRET = secret;
 ```
 
 ## Update google client variables
 
-In this section, you can update these variables:
+In this section, we will create Google oauth project & update client id & secret for Google login to work:
 
-```js title=".env.local"
+Follow this Guide if you are new to this: [https://support.google.com/cloud/answer/6158849?hl=en](https://support.google.com/cloud/answer/6158849?hl=en)
+
+1. Go to [Google cloud console](https://console.cloud.google.com/), Create a new project or Select any existing project;
+2. Go to APIs & services > New Credentials > Create OAuth client ID
+3. Fill in details for oauth screen to generate client id & secret. 
+
+```sh
+callback url: [origin]/api/auth/callback/google
+```
+
+Google config example screenshot: 
+
+<img
+  className="mt-4 overflow-hidden rounded-lg border"
+  src="/_static/docs/gg-auth-config.png"
+/>
+
+### Once created, save the client id & secret in your `.env` file
+
+```js title=".env"
 GOOGLE_CLIENT_ID = your_secret_client_id.apps.googleusercontent.com;
 GOOGLE_CLIENT_SECRET = your_secret_client;
 ```
@@ -58,9 +77,3 @@ Watch a youtube video from [CodeWithAntonio](https://www.youtube.com/@codewithan
 - GoogleAuth **local** config at [3:24:30](https://www.youtube.com/watch?v=1MTyCvS05V4&t=12270s)
 - Update GoogleAuth after **deployment** at [7:52:31](https://www.youtube.com/watch?v=1MTyCvS05V4&t=12270s)
 
-### Google config for this repo
-
-<img
-  className="mt-4 overflow-hidden rounded-lg border"
-  src="/_static/docs/gg-auth-config.jpg"
-/>
