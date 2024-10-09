@@ -102,9 +102,6 @@ c. Configure products & pricing plans, past price-plan ids in .env file
 pnpm run dev 
 ```
 
-## Roadmap 
-- [ ] Add resend for success subscriptions 
-
 ### Frameworks 
 
 - [Next.js](https://nextjs.org/) – React framework for building performant apps with the best developer experience
